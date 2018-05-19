@@ -15,6 +15,7 @@ export const DurationNumeratorInput: React.SFC<Props> = ({ onChange, value }) =>
 
   return (
     <TextField
+      inputProps={{min: 0}}
       label="Note Value (Numerator)"
       onChange={handler}
       defaultValue={value}

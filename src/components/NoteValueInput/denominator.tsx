@@ -15,6 +15,7 @@ export const DurationDenominatorInput: React.SFC<Props> = ({ onChange, value }) 
 
   return (
     <TextField
+      inputProps={{min: 0}}
       label="Note Value (Denominator)"
       onChange={handler}
       defaultValue={value}

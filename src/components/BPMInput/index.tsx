@@ -17,6 +17,7 @@ export const BPMInput: React.SFC<Props> = ({ defaultBpm, onChange }) => {
 
   return (
     <TextField
+      inputProps={{min: 0}}
       onChange={handler}
       defaultValue={defaultBpm.perMinute}
       label="BPM"
