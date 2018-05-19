@@ -20,7 +20,7 @@ export const BeatInput: React.SFC<Props> = ({ numerator, denominator, onChange }
   };
 
   return (
-    <div>
+    <>
       <BeatNumeratorInput
         value={numerator}
         onChange={onChangeNumerator}
@@ -29,6 +29,6 @@ export const BeatInput: React.SFC<Props> = ({ numerator, denominator, onChange }
         value={denominator}
         onChange={onChangeDenominator}
         />
-    </div>
+    </>
   );
 };
