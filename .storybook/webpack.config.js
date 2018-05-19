@@ -7,6 +7,9 @@
 // to "React Create App". This only has babel loader to load JavaScript.
 
 module.exports = {
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+  },
   plugins: [
     // your custom plugins
   ],
