@@ -7,7 +7,7 @@ interface Props {
   onChange: (numerator: number) => void;
 }
 
-export const DurationNumeratorInput: React.SFC<Props> = ({ onChange, value }) => {
+export const BeatNumeratorInput: React.SFC<Props> = ({ onChange, value }) => {
   const handler: React.ChangeEventHandler<HTMLInputElement> = (event) => {
     const numerator = event.target.valueAsNumber;
     onChange(numerator);
@@ -16,7 +16,7 @@ export const DurationNumeratorInput: React.SFC<Props> = ({ onChange, value }) =>
   return (
     <TextField
       inputProps={{min: 0}}
-      label="Note Value (Numerator)"
+      label="Beat (Numerator)"
       onChange={handler}
       defaultValue={value}
       type="number" />

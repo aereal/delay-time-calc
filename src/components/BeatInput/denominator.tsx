@@ -7,7 +7,7 @@ interface Props {
   onChange: (denominator: number) => void;
 }
 
-export const DurationDenominatorInput: React.SFC<Props> = ({ onChange, value }) => {
+export const BeatDenominatorInput: React.SFC<Props> = ({ onChange, value }) => {
   const handler: React.ChangeEventHandler<HTMLInputElement> = (event) => {
     const denominator = event.target.valueAsNumber;
     onChange(denominator);
@@ -16,7 +16,7 @@ export const DurationDenominatorInput: React.SFC<Props> = ({ onChange, value }) 
   return (
     <TextField
       inputProps={{min: 0}}
-      label="Note Value (Denominator)"
+      label="Beat (Denominator)"
       onChange={handler}
       defaultValue={value}
       type="number" />
