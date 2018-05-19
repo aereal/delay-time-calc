@@ -51,6 +51,7 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@material-ui/core": "^1.0.0",
     "@storybook/addon-actions": "^3.4.5",
     "@storybook/addon-links": "^3.4.5",
     "@storybook/addons": "^3.4.5",
